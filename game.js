@@ -8,6 +8,7 @@ const exitButton = document.getElementById('exitButton'); // Button to exit the 
 document.getElementById('startButton').addEventListener('click', function() {
     document.getElementById('startPage').style.display = 'none';
     document.getElementById('gameCanvas').style.display = 'block';
+    document.getElementById("gameHeader").style.display = "block";
     initGame(); 
 });
 
@@ -65,7 +66,7 @@ let ballElement = elements[0];
 let ballRadius = 10;
 let x = canvas.width / 2;
 let y = canvas.height - 30;
-let dx = 1;
+let dx = 1
 let dy = -1;
 
 // Cannon settings
@@ -97,10 +98,9 @@ function changeBallElement() {
 }
 
 function getColorForElement(element) {
-    if (element === "Pyro") return "#d00000";
-    if (element === "Electro") return "#7209b7";
-    if (element === "Cryo") return "#bbd0ff";
-    return "#ffffff";
+    if (element === "Pyro") return "#c1121f";
+    if (element === "Electro") return "#5a189a";
+    if (element === "Cryo") return "#a2d2ff";
 }
 
 function drawBall() {
@@ -114,7 +114,7 @@ function drawBall() {
 function drawCannon() {
     ctx.beginPath();
     ctx.rect(cannonX, canvas.height-cannonHeight, cannonWidth, cannonHeight);
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = "#fb8500";
     ctx.fill();
     ctx.closePath();
 }
@@ -343,7 +343,7 @@ document.addEventListener("click", function() {
         // Set a timeout to re-enable clicks after 2 seconds
         setTimeout(function() {
             clickEnabled = true;
-        }, 700); 
+        }, 1500);
     }
 });
 

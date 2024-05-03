@@ -4,12 +4,23 @@ body {
     background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
 }
 
+img {
+  margin-right: 20px;
+  width: 150px;
+  height: auto;
+}
+
 p {
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
     font-size: 30px;
-    color: #333333;
-}
+    color: white;
+    text-shadow:
+        0 0 2px black,
+        0 0 2px black,
+        0 0 2px black,
+        0 0 2px black;
+    }
 
 .container {
     display: flex;
@@ -17,7 +28,7 @@ p {
     align-items: center;
     height: 100vh;
     flex-direction: row;
-    gap: 400px; /* Add space between icon boxes */
+    gap: 200px; /* Add space between icon boxes */
 }
 
 .icon-box {
